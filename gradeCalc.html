@@ -36,15 +36,19 @@
     -->
 
     <!-- ابدأ الحل ↓↓↓ -->
+    <script src="./firstquestion.js"></script>
+
     <div class="wrapper">
       <h1>الحاسبة 🔢</h1>
 
       <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
 
-      <input id="Quizes" type="text" />
-      <input id="Midterm" type="text" />
-      <input id="FinalTest" type="text" />
-      <input id="Oral" type="text" />
+      <input class="box" id="Quizes" type="text" placeholder="Quizes mark"/>
+      <input class="box" id="Midterm" type="text" placeholder="Midterm mark" />
+      <input class="box" id="FinalTest" type="text" placeholder="Final exam mark" />
+      <input class="box" id="Oral" type="text" placeholder="oral" />
+      <br>
+      <br>
 
       <input
         id="submitButton"
@@ -53,11 +57,12 @@
         onClick="submit()"
       />
 
-      <p>مجموع درجاتك (بالأرقام) هو</p>
+      <p>:مجموع درجاتك (بالأرقام) هو</p>
       <div id="total_grades"></div>
 
-      <p>درجتك النهائية هي (بالأحرف)</p>
+      <p>:درجتك النهائية هي (بالأحرف)</p>
       <div id="final_grade"></div>
     </div>
+    
   </body>
 </html>
